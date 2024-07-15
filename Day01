@@ -1,2 +1,28 @@
-var myVar = 10
+//Task1: Declare a var using a var, assign it a numbe,r and log the value to the console.
+var myVar = 10      
 console.log(myVar);
+ 
+
+//Task2: Declare a var using a let, assign it a string and log the value to the console.
+
+let string = "sajdeen";
+console.log(string);
+console.log(typeof string);
+
+//Task3: Declare a var using a const, assign it a boolean Value, and log the value to the console.
+
+const boolVal = true;
+console.log(boolVal);
+console.log(typeof boolVal);
+
+//Task4: Create var of different datatypes (num,strimg,boolean,object,array),and log each variable's type using typeof operator.
+
+let num = 7
+console.log(num);
+console.log(typeof num);
+
+let name = "Sajdeen"
+
+console.log(name);
+console.log(typeof name);
+
