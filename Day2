@@ -44,4 +44,26 @@ let b1 =5
 a2= 6
 console.log(b1-=a2);
 
+//Comparison Operator
 
+//Wap to compare two numbers using > and < and log the results to the console
+
+let d1=5
+d2=3
+console.log(d1 > d2);
+console.log(d1 < d2);
+
+//Wap to compare two numbers using >= and <= and log the results to the console
+
+let x1=5
+y2=3
+console.log(x1 >= y2);//output true
+console.log(x1 <= y2);//output false
+
+
+//Wap to compare two numbers using == and === and log the results to the console
+
+let e1=5
+d2=5
+console.log(e1 == d2);
+console.log(e1 === d2);
