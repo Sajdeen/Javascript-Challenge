@@ -67,3 +67,6 @@ let e1=5
 d2=5
 console.log(e1 == d2);
 console.log(e1 === d2);
+
+//Act:4 : wap that uses the && operator to combine two conditions and log the results to the console
+
