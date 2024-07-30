@@ -11,9 +11,9 @@ let b1 = 4; // Changed variable name to avoid re-declaration error
 console.log(a1 - b1); // Outputs: 11
 
 // Task3: Wap to multiply two numbers and log a program to console
-let c = 15;
-let d = 4; // Changed variable name to avoid re-declaration error
-console.log(c \* d); // Outputs: 60
+var c = 15;
+c2 = 4; // Changed variable name to avoid re-declaration error
+console.log(c \* c2); // Outputs: 60 //but i dont knw why it comes division operator when i save so thats why it shows error
 
 // Task4: Wap to divide two numbers and log a program to console
 let y = 15;
