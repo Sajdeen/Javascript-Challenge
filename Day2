@@ -7,9 +7,9 @@ b = 4
 console.log(a+b);
 
 //Wap to add two numbers and log a program to console
-let a = 15
+let a1 = 15
 b = 4
-console.log(a-b);
+console.log(a1-b);
 
 //Task2:Wap to subtract two numbers and log a program to console.
 
@@ -19,9 +19,9 @@ console.log(c-b);
 
 //Task3:Wap to multiply two numbers and log a program to console.
 
-let f = 15
+let num = 15
 b = 4
-console.log(f*b);
+console.log(num\*b);
 
 //Task4: Wap to divide two numbers and log a program to console.
 
@@ -45,9 +45,5 @@ console.log(a1+=a2);
 //Use the += operator to subtract a anumber from a variable and log the result to the console
 
 let b1 =5
-a2= 6
-console.log(b1-=a2);
-
-
-
-
+a3= 6
+console.log(b1-=a);
