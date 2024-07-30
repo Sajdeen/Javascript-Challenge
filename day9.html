@@ -5,13 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dom</title>
 </head>
-<body>
+<body class="wrapper">
    <p id="cont">
     sajdeen
    </p> 
+   <div class="wrap">
+    <ul id="myList">
+        <li>Item 1</li>
+        <li>Item 2</li>
+    </ul>
+    
+   </div>
    <script>
     document.getElementById('cont').style.cssText = 'color: red; font-size: 25px; background-color: yellow;';
+    let elements = document.getElementsByClassName('wrapper');
+    
+    // Loop through the elements and change the background color
+    for (let i = 0; i < elements.length; i++) {
+        elements[i].style.backgroundColor = "pink";
+    }
+//Act2:Creating an appendin elements
+let newDiv = document.createElement('div');
 
-   </script>
+newDiv.textContent = 'this is new div';
+
+document.body.appendChild(newDiv);
+//Create a new li element and add it to an existing ul list.
+let newLi = document.createElement('li');
+newLi.textContent = 'New Item';
+
+let ul = document.getElementById('myList');
+ul.appendChild(newLi);
+</script>
 </body>
 </html>
