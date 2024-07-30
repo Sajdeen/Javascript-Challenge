@@ -4,10 +4,13 @@ var myVar = 10
 console.log(myVar);
 
 //Task2: Declare a variable using let, assign it a string, and log the value to the console.
-
 var str = "Sajdeen";
 console.log(str);
 //Declare a variable using var, assign it a number, and log the value to the console.
+var Str = "Sajdeen";
+console.log(Str);
+
+//Declare a variable using var, assign it a number, and log the value to the comsole.
 var myVar = 10
 
 console.log(myVar);

@@ -1,11 +1,15 @@
 //operators
 
 //Act:1 => Arithmetic operators
-//Task1:Wap to add two numbers and log a program to console.
-
+//Wap to add two numbers and log a program to console
 let a = 5
 b = 4
 console.log(a+b);
+
+//Wap to add two numbers and log a program to console
+let a = 15
+b = 4
+console.log(a-b);
 
 //Task2:Wap to subtract two numbers and log a program to console.
 
@@ -43,5 +47,7 @@ console.log(a1+=a2);
 let b1 =5
 a2= 6
 console.log(b1-=a2);
+
+
 
 
