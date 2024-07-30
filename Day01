@@ -1,21 +1,21 @@
-//Task1: Declare a variable using var, assign it a number, and log the value to the comsole.
+//Task1: Declare a variable using var, assign it a number, and log the value to the console.
 var myVar = 10
 
 console.log(myVar);
 
-//Task2: Declare a variable using let, assign it a string, and log the value to the comsole.
+//Task2: Declare a variable using let, assign it a string, and log the value to the console.
 
 var str = "Sajdeen";
 console.log(str);
-//Declare a variable using var, assign it a number, and log the value to the comsole.
+//Declare a variable using var, assign it a number, and log the value to the console.
 var myVar = 10
 
 console.log(myVar);
 
-//Task2: Declare a variable using let, assign it a string, and log the value to the comsole.
+//Task2: Declare a variable using let, assign it a string, and log the value to the console.
 
-let str = "Sajdeen";
-console.log(str);
+let Str = "Sajdeen";
+console.log(Str);
 
 //Task3: Declare a variable using const, assign it a boolean value, and log the value to the comsole.
 
