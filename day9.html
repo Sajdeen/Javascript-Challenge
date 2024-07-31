@@ -14,7 +14,8 @@
         <li>Item 1</li>
         <li>Item 2</li>
     </ul>
-    
+    <img id="APJ" src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSCtCUcGTFuq713kTeXgCFpjNLSGS4nXRMq73B8xiOWHkVJKtDU">
+
    </div>
    <script>
     document.getElementById('cont').style.cssText = 'color: red; font-size: 25px; background-color: yellow;';
@@ -36,6 +37,38 @@ newLi.textContent = 'New Item';
 
 let ul = document.getElementById('myList');
 ul.appendChild(newLi);
+
+//Act3=>Removing Elements
+//T5:Select a Html element  and remove it from the DOM
+function removeParagraph() {
+  const cont = document.getElementById('cont');
+  if (cont) {
+    cont.remove();
+  }
+}
+removeParagraph()
+//Task6: Remove the last child of a specific html element.
+function removeLastChildofElementById(id){
+    const element = document.getElementById(id);
+    if (element && element.lastChild){
+        element.removeChild(element.lastChild);
+    }
+}
+removeLastChildofElementById('myList');
+
+//Modifying Attributes and Classes
+//Task7: Select an Html element and change one of its attributes(e.g., src of an img tag).
+function changeImageSrc(id, newSrc) {
+      const img = document.getElementById(id);
+      if (img) {
+        img.src = newSrc;
+      }
+    }
+
+    changeImageSrc('APJ', 'https://via.placeholder.com/300'); // Changes the src attribute of the image with ID 'APJ'
+
+
+//Task8:Add and remove a css class to/form an html element.
 </script>
 </body>
 </html>
