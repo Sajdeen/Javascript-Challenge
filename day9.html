@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dom</title>
+    <style>
+      .highlight {
+            background-color: yellow;
+        }
+    </style>
 </head>
 <body class="wrapper">
    <p id="cont">
@@ -15,7 +20,8 @@
         <li>Item 2</li>
     </ul>
     <img id="APJ" src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSCtCUcGTFuq713kTeXgCFpjNLSGS4nXRMq73B8xiOWHkVJKtDU">
-
+<p class="mypara">this is para</p>
+<button onclick="toggleHighlight()">toggleHighlight</button>
    </div>
    <script>
     document.getElementById('cont').style.cssText = 'color: red; font-size: 25px; background-color: yellow;';
@@ -65,10 +71,23 @@ function changeImageSrc(id, newSrc) {
       }
     }
 
-    changeImageSrc('APJ', 'https://via.placeholder.com/300'); // Changes the src attribute of the image with ID 'APJ'
+    changeImageSrc('APJ', 'https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTmQUPZcI14sOgJcvB-kjaYnmTGjIM1W9Z-iaNnpMmPVDXxhzUL'); // Changes the src attribute of the image with ID 'APJ'
 
 
 //Task8:Add and remove a css class to/form an html element.
+//function toggleHighlight() {
+  //  var element = document.getElementsByClassName("mypara");
+    //element.classList.toggle("highlight");
+//}give me the correct ans of this ithnk it is wrong that's y i will comment it
+
+//*******************//
+
+//Act:5 Event Handling  
+//Task9:Add a click event listener to a button that changes the text content of a paragraph
+
+
+
+
 </script>
 </body>
 </html>
