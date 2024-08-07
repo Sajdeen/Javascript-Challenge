@@ -8,6 +8,15 @@
       .highlight {
             background-color: yellow;
         }
+      
+
+        .color-change {
+            width: 100px;
+            height: 50px;
+            background-color: rgb(11, 30, 36);
+            margin-top: 20px;
+        }
+    
     </style>
 </head>
 <body class="wrapper">
@@ -27,6 +36,15 @@
 
 <button onclick="toggleHighlight()">toggleHighlight</button>
    </div>
+
+   <img id="sajda" src="fl2.jpeg">
+   
+   <p id="text">Click the button to change this text.</p>
+    <button id="changeTextButton">Change Text</button>
+
+    <div id="colorBox" class="color-change"></div>
+
+   
    <script>
     document.getElementById('cont').style.cssText = 'color: red; font-size: 25px; background-color: yellow;';
     let elements = document.getElementsByClassName('wrapper');
@@ -141,6 +159,29 @@ removeh1();
 
 //4:Attribute Modification Script
 //Create a script that changes the attribute of an html element
+
+document.addEventListener('DOMContentLoaded', function() {
+            var image = document.getElementById('sajda');
+            image.setAttribute('src', 'flowr.jpeg');
+            image.setAttribute('alt', 'fl2');
+        });
+
+
+//Event handling Script: Write a  script that add a event listeners to html elements to change their context or style based on user interactions.
+document.addEventListener('DOMContentLoaded', () => {
+    const changeTextButton = document.getElementById('changeTextButton');
+    const textParagraph = document.getElementById('text');
+    const colorBox = document.getElementById('colorBox');
+
+    changeTextButton.addEventListener('click', () => {
+        textParagraph.textContent = 'The text has been changed!';
+    });
+
+    colorBox.addEventListener('click', () => {
+        colorBox.style.backgroundColor = colorBox.style.backgroundColor === 'light-blue' ? 'lightcoral' : 'lightblue';
+    });
+});
+
 </script>
 </body>
 </html>
