@@ -11,9 +11,11 @@
     </style>
 </head>
 <body class="wrapper">
+  <h1>Welcome to the day9 challenge</h1>
    <p id="cont">
     sajdeen
    </p> 
+   <div id="main">Hello this is my day 9 of dom Manipulation</div>
    <div class="wrap">
     <ul id="myList">
         <li>Item 1</li>
@@ -21,6 +23,8 @@
     </ul>
     <img id="APJ" src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSCtCUcGTFuq713kTeXgCFpjNLSGS4nXRMq73B8xiOWHkVJKtDU" alt="APj">
 <p class="mypara">this is para</p>
+<button class="submit">Click</button>
+
 <button onclick="toggleHighlight()">toggleHighlight</button>
    </div>
    <script>
@@ -85,9 +89,58 @@ function changeImageSrc(id, newSrc) {
 //Act:5 Event Handling  
 //Task9:Add a click event listener to a button that changes the text content of a paragraph
 
+document.querySelector('.submit').addEventListener('click',function(e){
+  e.target.textContent = 'Button Clicked!';
+  alert('button clicked');
+  
+  e.target.style.cssText = `
+    background-color:#10ac84;
+    color:white;
+    font-size:20px;
+    height:50px;
+    width:150px;
+    border-radius:20px;
+    transition:2s;
+    `;
+})
+//Task10:Add a mouseover event listener to an element that changes its border color.
+document.querySelector('.submit').addEventListener('mouseout', function(e){
+  e.target.style.borderColor='blue';
+});
 
 
+//Feature Request:
+//Text Content Manipulation Script:Write a script that selects an html element by its id and changes its text content.
+function changeText(){
+  const element = document.getElementById('main');
+if(element){
+  element.textContent = 'The text has been changed';
+}
+}
+window.onload = changeText;
+console.log('textchanged');
 
+
+//2Element Creation Script: create a script that demonstrates creating a new div element and appending it to the body.
+let nDiv = document.createElement('div');
+
+nDiv.textContent = 'this is nw div element';
+ nDiv.className ='new';
+
+ document.body.appendChild(nDiv);
+
+//3:Elements Removal Script: Create a script that selects an Html element and appending it to the body.
+
+function removeh1(){
+  const h1 = document.querySelector('h1');
+  if(h1){
+    h1.remove();
+  }
+}
+removeh1();
+
+//4:Attribute Modification Script
+//Create a script that changes the attribute of an html element
 </script>
 </body>
 </html>
